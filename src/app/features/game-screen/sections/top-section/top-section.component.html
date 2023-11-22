@@ -1,0 +1,13 @@
+<ion-row class="container">
+  <ion-col>
+    <ion-button (click)="goBack()">Back</ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-item>
+      <app-peg-container
+        [pegs]="gameService.solution"
+        [disabled]="true"
+      ></app-peg-container>
+    </ion-item>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-title>
+      <ion-icon src="assets/mastermind-logo.svg" class="logo"></ion-icon>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large" expand="block" shape="round">X</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <app-difficulty-section></app-difficulty-section>
+  <app-high-score-section></app-high-score-section>
+  <app-settings-section></app-settings-section>
+</ion-content>
+<ion-footer>
+  <ion-button expand="block" (click)="startGame()">{{
+    CONSTS.BUTTON
+  }}</ion-button>
+</ion-footer>

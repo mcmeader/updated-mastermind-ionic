@@ -1,0 +1,9 @@
+<ion-row>
+  <div class="round-number">{{ roundNumber }}</div>
+  <app-peg-container
+    [pegs]="answerData"
+    [disabled]="true"
+    [answerContainer]="true"
+  ></app-peg-container>
+  <app-peg-container [pegs]="guessData" [disabled]="true"></app-peg-container>
+</ion-row>

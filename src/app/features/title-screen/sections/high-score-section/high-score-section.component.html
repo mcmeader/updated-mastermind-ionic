@@ -1,0 +1,8 @@
+<ion-row>{{ CONSTS.HEADER }}</ion-row>
+<ion-row style="width: 90vw">
+  <ion-col *ngFor="let value of CONSTS.HIGH_SCORE" size="6">
+    <ion-card>
+      <ion-card-content>{{ value }}</ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>

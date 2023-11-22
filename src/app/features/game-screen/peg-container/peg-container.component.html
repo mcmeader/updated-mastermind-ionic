@@ -1,0 +1,12 @@
+<ion-card class="container">
+  <ion-row>
+    <ion-col *ngFor="let peg of pegs; let i = index">
+      <app-color-peg
+        [pegNumber]="i"
+        [static]="disabled"
+        [pegColor]="pegColors[peg].toString()"
+        (clicked)="clicked($event)"
+      ></app-color-peg>
+    </ion-col>
+  </ion-row>
+</ion-card>

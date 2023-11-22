@@ -1,0 +1,22 @@
+<ion-row>{{ CONSTS.HEADER }}</ion-row>
+<ion-row>
+  <ion-card style="width: 85vw">
+    <ion-card-content>
+      <ion-row>
+        <ion-segment
+          [value]="gameService.gameDifficulty$ | async"
+          scrollable="true"
+          style="width: 85vw"
+          (ionChange)="clickDifficulty($event)"
+        >
+          <ion-segment-button
+            *ngFor="let const of CONSTS.DIFFICULTIES"
+            [value]="const.difficulty"
+          >
+            {{ const.display }}
+          </ion-segment-button>
+        </ion-segment>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-row>

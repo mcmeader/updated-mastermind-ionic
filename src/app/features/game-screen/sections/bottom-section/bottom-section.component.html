@@ -1,0 +1,14 @@
+<ion-row class="lower-container">
+  <ion-col>
+    <ion-button (click)="submitGuess()">Submit</ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-item>
+      <app-peg-container
+        [pegs]="CHALLENGE[(gameService.gameDifficulty$ | async) || 0].colors"
+        [disabled]="false"
+        (pegColor)="selectColor($event)"
+      ></app-peg-container>
+    </ion-item>
+  </ion-col>
+</ion-row>

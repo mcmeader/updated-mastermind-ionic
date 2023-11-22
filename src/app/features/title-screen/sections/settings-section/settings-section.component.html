@@ -1,0 +1,10 @@
+<ion-row>{{ CONSTS.HEADER }}</ion-row>
+<ion-row *ngFor="let setting of CONSTS.SETTINGS">
+  <ion-card id="settings-button" style="width: 85vw">
+    <ion-card-content>
+      <ion-toggle justify="space-between" style="width: 80vw">
+        {{ setting }}
+      </ion-toggle>
+    </ion-card-content>
+  </ion-card>
+</ion-row>
